@@ -1,16 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JSX হচ্ছে JavaScript এর মধ্যে HTML-এর মতো syntax লেখার একটি উপায়। এতে আমরা সহজেই HTML-এর মত কোড লিখতে পারি কিন্তু সেটি JavaScript হিসেবে কাজ করে। JSX ব্যবহার করলে কোড পড়া এবং লেখা সহজ হয়, এবং React component তৈরি করা অনেক সুন্দর ও কার্যকর হয়।
+**State**: একটি component-এর নিজের ডেটা যা component নিজেই পরিবর্তন করতে পারে। State মূলত component-এর ভিতরে থাকে এবং সময়ের সাথে পরিবর্তিত হয়।  
+- **Props**: অন্য component থেকে data নেওয়ার উপায়। Props component-এর বাইরে থেকে আসে এবং এটি পরিবর্তনযোগ্য নয়। Props মূলত parent থেকে child component-এ data পাঠাতে ব্যবহার হয়।
+useState` হচ্ছে React-এর একটি hook যা component-এর ভিতরে state তৈরি করতে দেয়। এটি দুটি জিনিস return করে — একটি state value এবং একটি function যা state update করে
+React-এ state share করার জন্য সবচেয়ে সহজ উপায় হলো parent component-এ state রাখা এবং props ব্যবহার করে child component-এ পাঠানো। এছাড়াও Context API বা state management library (যেমন Redux) ব্যবহার করেও state share করা যায়।
+React-এ event handling HTML-এর মতোই হয়, কিন্তু syntax একটু ভিন্ন। আমরা event-এর নাম camelCase format-এ লিখি এবং একটি function assign করি।
